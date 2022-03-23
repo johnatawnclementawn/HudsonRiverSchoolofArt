@@ -1,0 +1,265 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": " Thomas Cole National Historic Site "
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.861145,
+          42.22559
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": " Olana State Historic Site "
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.827202,
+          42.217251
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": " Catskill Creek  (from Atelier Restaurant Bar) "
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.887604,
+          42.223621
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": " Kaaterskill Clove (From the Molly Smith Parking Lot, Rte 23A) "
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.074028,
+          42.184711
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": " Kaaterskill Falls"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.063,
+          42.19584
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": " North-South Lake "
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.041588,
+          42.200039
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": " Sunset Rock "
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.030685,
+          42.205063
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": " Catskill Mountain House"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.034744,
+          42.194729
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": " Mount Merino and the Catskills (from Promenade Hill Park, Hudson, NY) "
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.797097,
+          42.256215
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": " Albany, From the East side of the Hudson River "
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.749496,
+          42.63459
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": " Hudson River From Hasbrouk Park in Kingston "
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.980442,
+          41.922038
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": " Mohonk Lake                                                                                                         "
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.15532,
+          41.76814
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": " Eagle Cliff near Artist's Rock "
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.15532,
+          41.76814
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": " Shawangunk Mountains from Sky Top "
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.15637,
+          41.76419
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": " Hudson River from Vanderbilt Mansion"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.943329,
+          41.795673
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": " Hudson River from Croton Point Park "
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.893356,
+          41.181519
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": " Jasper Cropsey Home and Studio"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.881813,
+          40.992691
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": " Platte Clove "
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.085437,
+          42.133094
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": " Storm King from Long Dock Park "
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.98594,
+          41.50475
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": " Hudson River Skywalk "
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.854861,
+          42.224528
+        ]
+      }
+    }
+  ]
+}
