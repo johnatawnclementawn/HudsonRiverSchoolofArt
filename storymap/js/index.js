@@ -12,18 +12,18 @@ L.tileLayer('https://stamen-tiles.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg', {
 }).addTo(map);
 
 /* Load Hudson Valley Counties */
-// let showHudValCounties = () => {
-countiesLayer.clearLayers();
+let showHudValCounties = () => {
+  countiesLayer.clearLayers();
 
-const dataFileName = '../data/artTrailSites.json';
-fetch(dataFileName)
-  .then(response => response.json())
-  .then(data => {
-    console.log(data);
-    c = L.geoJSON(data)
-      .bindTooltip(layer => layer.feature.properties.name)
-      .addTo(map);
-    console.log(c);
-  });
-// };
+  const dataFileName = '../data/hudsonRiverValley.geojson';
+  fetch(dataFileName)
+    .then(response => response.json())
+    .then(data => {
+      console.log(data);
+      c = L.geoJSON(data)
+        .bindTooltip(layer => layer.feature.properties.name)
+        .addTo(map);
+      // console.log(c);
+    });
+};
 
