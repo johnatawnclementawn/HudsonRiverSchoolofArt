@@ -77,3 +77,7 @@ body {
 .slide-nav-select {
   min-width: 0;
 }
+
+.slide img {
+  width:100%;
+}

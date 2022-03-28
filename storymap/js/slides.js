@@ -11,144 +11,195 @@ const slides = [
       New England, The Maritimes of Canada, and South America. This exploration 
       will primarily cover first generation painters.      
     `,
-    era: null,
-    bounds: [
-      [
-        [
-          40.49709237269567,
-          -80.15625
-        ],
-        [
-          40.49709237269567,
-          -70.3564453125
-        ],
-        [
-          45.38301927899065,
-          -70.3564453125
-        ],
-        [
-          45.38301927899065,
-          -80.15625
-        ],
-        [
-          40.49709237269567,
-          -80.15625
-        ]
-      ]
-    ]
+    siteID: null,
   },
 
   {
-    title: 'Early Days',
+    title: 'Thomas Cole National Historic Site',
     content: `
-      Mjumbe was born in San Jose, California. He lived with his family first in
-      **San Jose**, then **Santa Cruz**, briefly in **Oceanside**, and finally
-      in **Riverside**.
+    <img src="data/paintings/cole_mainHouse.jpg" alt="Thomas Cole National Historic Site main house">
+    <br/><br/>
+    **Introduction by Kevin J. Avery, Senior Research Scholar, The Metropolitan Museum of Art**
+    <br/><br/>
+    *Hudson River School founder Thomas Cole fell in love with Catskill in 1825, 
+    when he first visited the village and the unforgettable mountains that form 
+    its backdrop.  He returned there several times from New York City, and several 
+    times painted the vista to the west crowned by the distinctive crests of Kaaterskill 
+    High Peak and Round Top.Cole began working in Catskill regularly in summer 1834, 
+    then fell in love again, this time with a woman, Maria Bartow, who lived on the property 
+    called Cedar Grove with her uncle and three sisters.  Cole and Maria married in 1836 
+    and set up house in Cedar Grove.  For the remaining decade of his life, 
+    Cole could exult every fair morning in the prospect of the mountains from his porch. 
+    For his paintings, though, the artist preferred the view of them overlooking the curving, 
+    reflective surface of Catskill Creek, not far from his home.
+    <br/><br/>
+    The Main House and Studio are open by guided and self-guided tours, which are offered 
+    Tuesday through Sunday from May through October. The historic grounds and visitor center 
+    are open free of charge every day from dawn to dusk. For  information visit 
+    [thomascole.org/visit](http://thomascole.org/visit/).*
     `,
-    era: 'early life',
+    siteID: 'Thomas_Cole_National_Historic_Site',
     showpopups: true,
   },
 
   {
-    title: 'Move to Philadelphia',
+    title: 'Olana State Historic Site',
     content: `
-      When Mjumbe was 11, his family moved across the country to Philadelphia.
-      They lived in what would later be knows as the **Cedar Park**
-      neighborhood, and Mjumbe attended **J.R. Masterman** for middle and high
-      school.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer eget aliquet nibh praesent. Sed tempus urna et pharetra pharetra massa massa. At risus viverra adipiscing at in tellus. Eget magna fermentum iaculis eu non. Pharetra et ultrices neque ornare aenean euismod elementum nisi. Amet nisl suscipit adipiscing bibendum est ultricies integer quis auctor. Elementum nibh tellus molestie nunc non blandit massa enim. Cras adipiscing enim eu turpis egestas pretium aenean pharetra. Lorem dolor sed viverra ipsum nunc. Egestas purus viverra accumsan in nisl.
     `,
-    era: 'formative',
+    siteID: 'Olana_State_Historic_Site',
     showpopups: true,
   },
 
   {
-    title: 'College',
+    title: 'Catskill Creek',
     content: `
-      Mjumbe went back to California for college. He graduated with a computer
-      science degree from **Harvey Mudd College** in **Claremont, California**.
-      After college, Mjumbe moved back to the Cedar Park neighborhood and worked
-      for a few years at the University of Pennsylvania, making tools for
-      modeling and simulation in the social sciences.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer eget aliquet nibh praesent. Sed tempus urna et pharetra pharetra massa massa. At risus viverra adipiscing at in tellus. Eget magna fermentum iaculis eu non. Pharetra et ultrices neque ornare aenean euismod elementum nisi. Amet nisl suscipit adipiscing bibendum est ultricies integer quis auctor. Elementum nibh tellus molestie nunc non blandit massa enim. Cras adipiscing enim eu turpis egestas pretium aenean pharetra. Lorem dolor sed viverra ipsum nunc. Egestas purus viverra accumsan in nisl.
     `,
-    era: 'college',
+    siteID: 'Catskill_Creek',
     showpopups: true,
   },
 
   {
-    title: 'Code for America',
+    title: 'Kaaterskill Clove',
     content: `
-      Mjumbe was a Code for America fellow in 2011, living and working primarily
-      from **Oakland, CA**. He worked on projects with the cities of Philadelphia
-      and Seattle.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer eget aliquet nibh praesent. Sed tempus urna et pharetra pharetra massa massa. At risus viverra adipiscing at in tellus. Eget magna fermentum iaculis eu non. Pharetra et ultrices neque ornare aenean euismod elementum nisi. Amet nisl suscipit adipiscing bibendum est ultricies integer quis auctor. Elementum nibh tellus molestie nunc non blandit massa enim. Cras adipiscing enim eu turpis egestas pretium aenean pharetra. Lorem dolor sed viverra ipsum nunc. Egestas purus viverra accumsan in nisl.
     `,
-    era: 'cfa',
+    siteID: 'Kaaterskill_Clove',
     showpopups: true,
   },
 
   {
-    title: 'OpenPlans',
+    title: 'Kaaterskill Falls',
     content: `
-      After Code for America, Mjumbe went to work for OpenPlans, a NYC-based
-      non-profit making tools to help citizens get involved in the urban
-      planning process. He would usually work remotely from **Independents Hall**,
-      making occasional trips to the NYC office from his home in **Yorktown** via
-      the **Temple University train station**.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer eget aliquet nibh praesent. Sed tempus urna et pharetra pharetra massa massa. At risus viverra adipiscing at in tellus. Eget magna fermentum iaculis eu non. Pharetra et ultrices neque ornare aenean euismod elementum nisi. Amet nisl suscipit adipiscing bibendum est ultricies integer quis auctor. Elementum nibh tellus molestie nunc non blandit massa enim. Cras adipiscing enim eu turpis egestas pretium aenean pharetra. Lorem dolor sed viverra ipsum nunc. Egestas purus viverra accumsan in nisl.
     `,
-    era: 'openplans',
+    siteID: 'Kaaterskill_Falls',
     showpopups: true,
   },
 
   {
-    title: 'City of Philadelphia',
+    title: 'North-South Lake',
     content: `
-      Mjumbe then went to work for the **City of Philadelphia** in the Office of
-      Open Data and Digital Transformation. During this period he lived near
-      Temple University in the **Hartranft** neighborhood.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer eget aliquet nibh praesent. Sed tempus urna et pharetra pharetra massa massa. At risus viverra adipiscing at in tellus. Eget magna fermentum iaculis eu non. Pharetra et ultrices neque ornare aenean euismod elementum nisi. Amet nisl suscipit adipiscing bibendum est ultricies integer quis auctor. Elementum nibh tellus molestie nunc non blandit massa enim. Cras adipiscing enim eu turpis egestas pretium aenean pharetra. Lorem dolor sed viverra ipsum nunc. Egestas purus viverra accumsan in nisl.
     `,
-    era: 'city of phila',
+    siteID: 'North_South_Lake',
     showpopups: true,
   },
 
   {
-    title: 'Stepwise',
+    title: 'Sunset Rock',
     content: `
-      Mjumbe left the city of Philadelphia to work on a startup called Stepwise
-      with a former coworker and friend. They made tools to help investors get
-      a fuller picture of potential investment properties. They would often work
-      out of the **First Round Capital** offices. For a time Mjumbe lived in the
-      **Woodland Terrace** neighborhood, and later in an apartment overlooking
-      **Malcolm X Park**.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer eget aliquet nibh praesent. Sed tempus urna et pharetra pharetra massa massa. At risus viverra adipiscing at in tellus. Eget magna fermentum iaculis eu non. Pharetra et ultrices neque ornare aenean euismod elementum nisi. Amet nisl suscipit adipiscing bibendum est ultricies integer quis auctor. Elementum nibh tellus molestie nunc non blandit massa enim. Cras adipiscing enim eu turpis egestas pretium aenean pharetra. Lorem dolor sed viverra ipsum nunc. Egestas purus viverra accumsan in nisl.
     `,
-    era: 'stepwise',
+    siteID: 'Sunset_Rock',
     showpopups: true,
   },
 
   {
-    title: 'International Conference on Appropriate Technology',
+    title: 'Catskill Mountain House',
     content: `
-      Mjumbe has been involved with the planning of the International Conference
-      on Appropriate Technology since 2012. This conference has taken him to
-      locations around Africa.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer eget aliquet nibh praesent. Sed tempus urna et pharetra pharetra massa massa. At risus viverra adipiscing at in tellus. Eget magna fermentum iaculis eu non. Pharetra et ultrices neque ornare aenean euismod elementum nisi. Amet nisl suscipit adipiscing bibendum est ultricies integer quis auctor. Elementum nibh tellus molestie nunc non blandit massa enim. Cras adipiscing enim eu turpis egestas pretium aenean pharetra. Lorem dolor sed viverra ipsum nunc. Egestas purus viverra accumsan in nisl.
     `,
-    era: 'inat',
+    siteID: 'Catskill_Mountain_House',
     showpopups: true,
   },
 
   {
-    title: 'Travels',
+    title: 'Mount Merino and the Catskills',
     content: `
-      Additionally, Mjumbe has been lucky to spend time in several places around
-      the world.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer eget aliquet nibh praesent. Sed tempus urna et pharetra pharetra massa massa. At risus viverra adipiscing at in tellus. Eget magna fermentum iaculis eu non. Pharetra et ultrices neque ornare aenean euismod elementum nisi. Amet nisl suscipit adipiscing bibendum est ultricies integer quis auctor. Elementum nibh tellus molestie nunc non blandit massa enim. Cras adipiscing enim eu turpis egestas pretium aenean pharetra. Lorem dolor sed viverra ipsum nunc. Egestas purus viverra accumsan in nisl.
     `,
-    era: 'travels',
+    siteID: 'Mount_Merino_and_the_Catskills',
     showpopups: true,
   },
 
   {
-    title: 'Present Day',
+    title: 'Albany From the East side of the Hudson River',
     content: `
-      Mjumbe currently lives in **East Passyunk**. Thanks for taking this journey!
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer eget aliquet nibh praesent. Sed tempus urna et pharetra pharetra massa massa. At risus viverra adipiscing at in tellus. Eget magna fermentum iaculis eu non. Pharetra et ultrices neque ornare aenean euismod elementum nisi. Amet nisl suscipit adipiscing bibendum est ultricies integer quis auctor. Elementum nibh tellus molestie nunc non blandit massa enim. Cras adipiscing enim eu turpis egestas pretium aenean pharetra. Lorem dolor sed viverra ipsum nunc. Egestas purus viverra accumsan in nisl.
     `,
-    era: 'present day',
+    siteID: 'Albany',
   },
+
+  {
+    title: 'Hudson River From Hasbrouk Park in Kingston',
+    content: `
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer eget aliquet nibh praesent. Sed tempus urna et pharetra pharetra massa massa. At risus viverra adipiscing at in tellus. Eget magna fermentum iaculis eu non. Pharetra et ultrices neque ornare aenean euismod elementum nisi. Amet nisl suscipit adipiscing bibendum est ultricies integer quis auctor. Elementum nibh tellus molestie nunc non blandit massa enim. Cras adipiscing enim eu turpis egestas pretium aenean pharetra. Lorem dolor sed viverra ipsum nunc. Egestas purus viverra accumsan in nisl.
+    `,
+    siteID: 'Hudson_River_From_Hasbrouk',
+  },
+
+  {
+    title: 'Mohonk Lake',
+    content: `
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer eget aliquet nibh praesent. Sed tempus urna et pharetra pharetra massa massa. At risus viverra adipiscing at in tellus. Eget magna fermentum iaculis eu non. Pharetra et ultrices neque ornare aenean euismod elementum nisi. Amet nisl suscipit adipiscing bibendum est ultricies integer quis auctor. Elementum nibh tellus molestie nunc non blandit massa enim. Cras adipiscing enim eu turpis egestas pretium aenean pharetra. Lorem dolor sed viverra ipsum nunc. Egestas purus viverra accumsan in nisl.
+    `,
+    siteID: 'Mohonk_Lake',
+  },
+
+  {
+    title: 'Eagle Cliff near Artist\'s Rock',
+    content: `
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer eget aliquet nibh praesent. Sed tempus urna et pharetra pharetra massa massa. At risus viverra adipiscing at in tellus. Eget magna fermentum iaculis eu non. Pharetra et ultrices neque ornare aenean euismod elementum nisi. Amet nisl suscipit adipiscing bibendum est ultricies integer quis auctor. Elementum nibh tellus molestie nunc non blandit massa enim. Cras adipiscing enim eu turpis egestas pretium aenean pharetra. Lorem dolor sed viverra ipsum nunc. Egestas purus viverra accumsan in nisl.
+    `,
+    siteID: 'Eagle_Cliff',
+  },
+
+  {
+    title: 'Shawangunk Mountains from Sky Top',
+    content: `
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer eget aliquet nibh praesent. Sed tempus urna et pharetra pharetra massa massa. At risus viverra adipiscing at in tellus. Eget magna fermentum iaculis eu non. Pharetra et ultrices neque ornare aenean euismod elementum nisi. Amet nisl suscipit adipiscing bibendum est ultricies integer quis auctor. Elementum nibh tellus molestie nunc non blandit massa enim. Cras adipiscing enim eu turpis egestas pretium aenean pharetra. Lorem dolor sed viverra ipsum nunc. Egestas purus viverra accumsan in nisl.
+    `,
+    siteID: 'Shawangunk_Mountains',
+  },
+
+  {
+    title: 'Hudson River from Vanderbilt Mansion',
+    content: `
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer eget aliquet nibh praesent. Sed tempus urna et pharetra pharetra massa massa. At risus viverra adipiscing at in tellus. Eget magna fermentum iaculis eu non. Pharetra et ultrices neque ornare aenean euismod elementum nisi. Amet nisl suscipit adipiscing bibendum est ultricies integer quis auctor. Elementum nibh tellus molestie nunc non blandit massa enim. Cras adipiscing enim eu turpis egestas pretium aenean pharetra. Lorem dolor sed viverra ipsum nunc. Egestas purus viverra accumsan in nisl.
+    `,
+    siteID: 'Hudson_River_from_Vanderbilt',
+  },
+
+  {
+    title: 'Hudson River from Croton Point Park',
+    content: `
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer eget aliquet nibh praesent. Sed tempus urna et pharetra pharetra massa massa. At risus viverra adipiscing at in tellus. Eget magna fermentum iaculis eu non. Pharetra et ultrices neque ornare aenean euismod elementum nisi. Amet nisl suscipit adipiscing bibendum est ultricies integer quis auctor. Elementum nibh tellus molestie nunc non blandit massa enim. Cras adipiscing enim eu turpis egestas pretium aenean pharetra. Lorem dolor sed viverra ipsum nunc. Egestas purus viverra accumsan in nisl.
+    `,
+    siteID: 'Hudson_River_from_Croton',
+  },
+
+  {
+    title: 'Jasper Cropsey Home and Studio',
+    content: `
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer eget aliquet nibh praesent. Sed tempus urna et pharetra pharetra massa massa. At risus viverra adipiscing at in tellus. Eget magna fermentum iaculis eu non. Pharetra et ultrices neque ornare aenean euismod elementum nisi. Amet nisl suscipit adipiscing bibendum est ultricies integer quis auctor. Elementum nibh tellus molestie nunc non blandit massa enim. Cras adipiscing enim eu turpis egestas pretium aenean pharetra. Lorem dolor sed viverra ipsum nunc. Egestas purus viverra accumsan in nisl.
+    `,
+    siteID: 'Jasper_Cropsey',
+  },
+
+  {
+    title: 'Platte Clove',
+    content: `
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer eget aliquet nibh praesent. Sed tempus urna et pharetra pharetra massa massa. At risus viverra adipiscing at in tellus. Eget magna fermentum iaculis eu non. Pharetra et ultrices neque ornare aenean euismod elementum nisi. Amet nisl suscipit adipiscing bibendum est ultricies integer quis auctor. Elementum nibh tellus molestie nunc non blandit massa enim. Cras adipiscing enim eu turpis egestas pretium aenean pharetra. Lorem dolor sed viverra ipsum nunc. Egestas purus viverra accumsan in nisl.
+    `,
+    siteID: 'Platte_Clove',
+  },
+
+  {
+    title: 'Storm King from Long Dock Park',
+    content: `
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer eget aliquet nibh praesent. Sed tempus urna et pharetra pharetra massa massa. At risus viverra adipiscing at in tellus. Eget magna fermentum iaculis eu non. Pharetra et ultrices neque ornare aenean euismod elementum nisi. Amet nisl suscipit adipiscing bibendum est ultricies integer quis auctor. Elementum nibh tellus molestie nunc non blandit massa enim. Cras adipiscing enim eu turpis egestas pretium aenean pharetra. Lorem dolor sed viverra ipsum nunc. Egestas purus viverra accumsan in nisl.
+    `,
+    siteID: 'Storm_King',
+  },
+
+  {
+    title: 'Hudson River Skywalk',
+    content: `
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer eget aliquet nibh praesent. Sed tempus urna et pharetra pharetra massa massa. At risus viverra adipiscing at in tellus. Eget magna fermentum iaculis eu non. Pharetra et ultrices neque ornare aenean euismod elementum nisi. Amet nisl suscipit adipiscing bibendum est ultricies integer quis auctor. Elementum nibh tellus molestie nunc non blandit massa enim. Cras adipiscing enim eu turpis egestas pretium aenean pharetra. Lorem dolor sed viverra ipsum nunc. Egestas purus viverra accumsan in nisl.
+    `,
+    siteID: 'Hudson_River_Skywalk',
+  },
+  
 ];
