@@ -2,7 +2,7 @@
 
 let map = L.map('map').setView([41.6934242, -73.424951], 8);
 let layerGroup = L.layerGroup().addTo(map);
-let lifeCollection = { features: [] };
+let artCollection = { features: [] };
 
 L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
 	attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community',
@@ -25,12 +25,12 @@ function updateMap(collection) {
 function makeEraCollection(siteID) {
   return {
     type: 'FeatureCollection',
-    features: lifeCollection.features.filter(f => f.properties.siteID === siteID),
+    features: artCollection.features.filter(f => f.properties.siteID === siteID),
   };
 }
 
 function syncMapToSlide(slide) {
-  const collection = slide.siteID ? makeEraCollection(slide.siteID) : lifeCollection;
+  const collection = slide.siteID ? makeEraCollection(slide.siteID) : artCollection;
   const layer = updateMap(collection);
 
   function handleFlyEnd() {
@@ -61,22 +61,44 @@ function initSlides() {
 
   slidesDiv.innerHTML = '';
   for (const [index, slide] of slides.entries()) {
-    const slideDiv = htmlToElement(`
+    const slideDivHeader = htmlToElement(`
       <div class="slide" id="slide-${index}">
         <h2>${slide.title}</h2>
-        ${converter.makeHtml(slide.content)}
+        <div class="slideshow-container" id="slide-${index}">
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
       </div>
     `);
-    slidesDiv.appendChild(slideDiv);
+    slidesDiv.appendChild(slideDivHeader);
+  
+    let paintings = slide.paintings;
+    if (paintings) {
+      paintings = paintings.split(",");
+      for (imgIdx in paintings) {
+        const imgLoc = paintings[imgIdx];
+        const imgDiv = htmlToElement(`
+          <div class="mySlides fade">
+            <div class="numbertext">${imgIdx} / ${paintings.length}</div>
+            <img src="data/paintings/${imgLoc}" style="width:100%">
+          </div>
+        `);
+        let targetSlideSlideshow = document.getElementById('slide-' + index).getElementsByClassName("slideshow-container")[0];
+        targetSlideSlideshow.appendChild(imgDiv);
+      };      
+    }
+
+    const slideDivContent = htmlToElement(` ${converter.makeHtml(slide.content)} `);
+    let targetSlide = document.getElementById('slide-' + index);
+    targetSlide.appendChild(slideDivContent);
   }
 }
 
-function loadLifeData() {
-  // fetch('data/journey.json')
+function loadSitesData() {
   fetch('data/artTrailSites.json')
     .then(resp => resp.json())
     .then(data => {
-      lifeCollection = data;
+      artCollection = data;
       syncMapToCurrentSlide();
     });
 }
@@ -106,4 +128,35 @@ document.addEventListener('scroll', calcCurrentSlideIndex);
 
 initSlides();
 syncMapToCurrentSlide();
-loadLifeData();
+loadSitesData();
+
+
+/* JS from image slide show example:  https://www.w3schools.com/howto/howto_js_slideshow.asp*/
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  // let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  // for (i = 0; i < dots.length; i++) {
+  //   dots[i].className = dots[i].className.replace(" active", "");
+  // }
+  slides[slideIndex-1].style.display = "block";
+  // dots[slideIndex-1].className += " active";
+} 

@@ -12,6 +12,7 @@ const slides = [
       will primarily cover first generation painters.      
     `,
     siteID: null,
+    paintings: null,
   },
 
   {
@@ -39,15 +40,19 @@ const slides = [
     [thomascole.org/visit](http://thomascole.org/visit/).*
     `,
     siteID: 'Thomas_Cole_National_Historic_Site',
+    paintings: "cole_mainHouse.jpg,cole_mainHouse_irl.jpg",
     showpopups: true,
   },
 
   {
     title: 'Olana State Historic Site',
     content: `
+    <img src="data/paintings/Catskill-Mountains_FromOlana1_Church.jpg" alt="Catskill Mountains From Olana, Frederic Church">
+    <br/><br/>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer eget aliquet nibh praesent. Sed tempus urna et pharetra pharetra massa massa. At risus viverra adipiscing at in tellus. Eget magna fermentum iaculis eu non. Pharetra et ultrices neque ornare aenean euismod elementum nisi. Amet nisl suscipit adipiscing bibendum est ultricies integer quis auctor. Elementum nibh tellus molestie nunc non blandit massa enim. Cras adipiscing enim eu turpis egestas pretium aenean pharetra. Lorem dolor sed viverra ipsum nunc. Egestas purus viverra accumsan in nisl.
     `,
     siteID: 'Olana_State_Historic_Site',
+    paintings: "Catskill-Mountains_FromOlana1_Church.jpg,olana_pano.jpg,olana_sketch_Church.jpg,olana_mansion.jpg",
     showpopups: true,
   },
 
@@ -57,6 +62,7 @@ const slides = [
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer eget aliquet nibh praesent. Sed tempus urna et pharetra pharetra massa massa. At risus viverra adipiscing at in tellus. Eget magna fermentum iaculis eu non. Pharetra et ultrices neque ornare aenean euismod elementum nisi. Amet nisl suscipit adipiscing bibendum est ultricies integer quis auctor. Elementum nibh tellus molestie nunc non blandit massa enim. Cras adipiscing enim eu turpis egestas pretium aenean pharetra. Lorem dolor sed viverra ipsum nunc. Egestas purus viverra accumsan in nisl.
     `,
     siteID: 'Catskill_Creek',
+    paintings: "viewOnTheCatskill_Cole.jpg,sceneOnTheCatskillCreek_Church.jpg,catskillCreek_Cole.jpg,onCatskillCreekAtSunset_Cole.jpg",
     showpopups: true,
   },
 
@@ -66,6 +72,7 @@ const slides = [
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer eget aliquet nibh praesent. Sed tempus urna et pharetra pharetra massa massa. At risus viverra adipiscing at in tellus. Eget magna fermentum iaculis eu non. Pharetra et ultrices neque ornare aenean euismod elementum nisi. Amet nisl suscipit adipiscing bibendum est ultricies integer quis auctor. Elementum nibh tellus molestie nunc non blandit massa enim. Cras adipiscing enim eu turpis egestas pretium aenean pharetra. Lorem dolor sed viverra ipsum nunc. Egestas purus viverra accumsan in nisl.
     `,
     siteID: 'Kaaterskill_Clove',
+    paintings: "topOfKaaterskill_Cole.png,topOfKaaterskill2_Cole.jpg,topOfKaaterskill_Durand.jpg,Asher_Durand_Kindred_Spirits.jpg,Kaaterskill_Clove_by_Harriet_Cany_Peale_1858.jpg,kaaterskillClove_irl.jpg",
     showpopups: true,
   },
 
@@ -75,6 +82,7 @@ const slides = [
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer eget aliquet nibh praesent. Sed tempus urna et pharetra pharetra massa massa. At risus viverra adipiscing at in tellus. Eget magna fermentum iaculis eu non. Pharetra et ultrices neque ornare aenean euismod elementum nisi. Amet nisl suscipit adipiscing bibendum est ultricies integer quis auctor. Elementum nibh tellus molestie nunc non blandit massa enim. Cras adipiscing enim eu turpis egestas pretium aenean pharetra. Lorem dolor sed viverra ipsum nunc. Egestas purus viverra accumsan in nisl.
     `,
     siteID: 'Kaaterskill_Falls',
+    paintings: "kaaterskillFalls_Cole.jpg,kaaterskill-falls-1826_Cole.jpg,kaaterskill-falls3.jpg,kaaterskill-falls4.jpg,kaaterskill-falls_irl.jpg",
     showpopups: true,
   },
 
@@ -84,6 +92,7 @@ const slides = [
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer eget aliquet nibh praesent. Sed tempus urna et pharetra pharetra massa massa. At risus viverra adipiscing at in tellus. Eget magna fermentum iaculis eu non. Pharetra et ultrices neque ornare aenean euismod elementum nisi. Amet nisl suscipit adipiscing bibendum est ultricies integer quis auctor. Elementum nibh tellus molestie nunc non blandit massa enim. Cras adipiscing enim eu turpis egestas pretium aenean pharetra. Lorem dolor sed viverra ipsum nunc. Egestas purus viverra accumsan in nisl.
     `,
     siteID: 'North_South_Lake',
+    paintings: "lake-with-dead-trees-catskill-1825_Cole.jpg,north_south_lake.jpg,north_south_lake_irl.jpg",
     showpopups: true,
   },
 
@@ -93,6 +102,7 @@ const slides = [
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer eget aliquet nibh praesent. Sed tempus urna et pharetra pharetra massa massa. At risus viverra adipiscing at in tellus. Eget magna fermentum iaculis eu non. Pharetra et ultrices neque ornare aenean euismod elementum nisi. Amet nisl suscipit adipiscing bibendum est ultricies integer quis auctor. Elementum nibh tellus molestie nunc non blandit massa enim. Cras adipiscing enim eu turpis egestas pretium aenean pharetra. Lorem dolor sed viverra ipsum nunc. Egestas purus viverra accumsan in nisl.
     `,
     siteID: 'Sunset_Rock',
+    paintings: "sunsetRock_Cole.jpg,sunsetRock2.jpg,sunsetRock_irl.jpg",
     showpopups: true,
   },
 
@@ -102,6 +112,7 @@ const slides = [
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer eget aliquet nibh praesent. Sed tempus urna et pharetra pharetra massa massa. At risus viverra adipiscing at in tellus. Eget magna fermentum iaculis eu non. Pharetra et ultrices neque ornare aenean euismod elementum nisi. Amet nisl suscipit adipiscing bibendum est ultricies integer quis auctor. Elementum nibh tellus molestie nunc non blandit massa enim. Cras adipiscing enim eu turpis egestas pretium aenean pharetra. Lorem dolor sed viverra ipsum nunc. Egestas purus viverra accumsan in nisl.
     `,
     siteID: 'Catskill_Mountain_House',
+    paintings: "catskillMtnHouse1_Church.jpg,catskillMtnHouse2_Church.jpg,catskillMtnHouse3_Church.jpg,theHandsOfGlaciers_Cole.jpg",
     showpopups: true,
   },
 
@@ -111,6 +122,7 @@ const slides = [
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer eget aliquet nibh praesent. Sed tempus urna et pharetra pharetra massa massa. At risus viverra adipiscing at in tellus. Eget magna fermentum iaculis eu non. Pharetra et ultrices neque ornare aenean euismod elementum nisi. Amet nisl suscipit adipiscing bibendum est ultricies integer quis auctor. Elementum nibh tellus molestie nunc non blandit massa enim. Cras adipiscing enim eu turpis egestas pretium aenean pharetra. Lorem dolor sed viverra ipsum nunc. Egestas purus viverra accumsan in nisl.
     `,
     siteID: 'Mount_Merino_and_the_Catskills',
+    paintings: "south_bay_hudson_Gifford.jpg,south_bay_hudson_irl.jpg",
     showpopups: true,
   },
 
@@ -120,6 +132,8 @@ const slides = [
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer eget aliquet nibh praesent. Sed tempus urna et pharetra pharetra massa massa. At risus viverra adipiscing at in tellus. Eget magna fermentum iaculis eu non. Pharetra et ultrices neque ornare aenean euismod elementum nisi. Amet nisl suscipit adipiscing bibendum est ultricies integer quis auctor. Elementum nibh tellus molestie nunc non blandit massa enim. Cras adipiscing enim eu turpis egestas pretium aenean pharetra. Lorem dolor sed viverra ipsum nunc. Egestas purus viverra accumsan in nisl.
     `,
     siteID: 'Albany',
+    paintings: "viewOfAlbany_Cole.jpg,viewOfAlbany_irl.jpg",
+    showpopups: true,
   },
 
   {
@@ -128,6 +142,8 @@ const slides = [
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer eget aliquet nibh praesent. Sed tempus urna et pharetra pharetra massa massa. At risus viverra adipiscing at in tellus. Eget magna fermentum iaculis eu non. Pharetra et ultrices neque ornare aenean euismod elementum nisi. Amet nisl suscipit adipiscing bibendum est ultricies integer quis auctor. Elementum nibh tellus molestie nunc non blandit massa enim. Cras adipiscing enim eu turpis egestas pretium aenean pharetra. Lorem dolor sed viverra ipsum nunc. Egestas purus viverra accumsan in nisl.
     `,
     siteID: 'Hudson_River_From_Hasbrouk',
+    paintings: "hasbroukPark_Tubby.jpg",
+    showpopups: true,
   },
 
   {
@@ -136,6 +152,8 @@ const slides = [
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer eget aliquet nibh praesent. Sed tempus urna et pharetra pharetra massa massa. At risus viverra adipiscing at in tellus. Eget magna fermentum iaculis eu non. Pharetra et ultrices neque ornare aenean euismod elementum nisi. Amet nisl suscipit adipiscing bibendum est ultricies integer quis auctor. Elementum nibh tellus molestie nunc non blandit massa enim. Cras adipiscing enim eu turpis egestas pretium aenean pharetra. Lorem dolor sed viverra ipsum nunc. Egestas purus viverra accumsan in nisl.
     `,
     siteID: 'Mohonk_Lake',
+    paintings: "THOMAS-COLE-LAKE-MOHONK.jpg,lakeMohonk_Cole.jpg,lakeMohonk_irl.jpg,lakeMohonk2_Cole.jpg",
+    showpopups: true,
   },
 
   {
@@ -144,6 +162,8 @@ const slides = [
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer eget aliquet nibh praesent. Sed tempus urna et pharetra pharetra massa massa. At risus viverra adipiscing at in tellus. Eget magna fermentum iaculis eu non. Pharetra et ultrices neque ornare aenean euismod elementum nisi. Amet nisl suscipit adipiscing bibendum est ultricies integer quis auctor. Elementum nibh tellus molestie nunc non blandit massa enim. Cras adipiscing enim eu turpis egestas pretium aenean pharetra. Lorem dolor sed viverra ipsum nunc. Egestas purus viverra accumsan in nisl.
     `,
     siteID: 'Eagle_Cliff',
+    paintings: "eaglesCliff_Whittredge.jpg,eaglesCliff_irl.jpg",
+    showpopups: true,
   },
 
   {
@@ -152,6 +172,8 @@ const slides = [
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer eget aliquet nibh praesent. Sed tempus urna et pharetra pharetra massa massa. At risus viverra adipiscing at in tellus. Eget magna fermentum iaculis eu non. Pharetra et ultrices neque ornare aenean euismod elementum nisi. Amet nisl suscipit adipiscing bibendum est ultricies integer quis auctor. Elementum nibh tellus molestie nunc non blandit massa enim. Cras adipiscing enim eu turpis egestas pretium aenean pharetra. Lorem dolor sed viverra ipsum nunc. Egestas purus viverra accumsan in nisl.
     `,
     siteID: 'Shawangunk_Mountains',
+    paintings: "shawangunks_Gifford.jpg,gunks_irl.jpg",
+    showpopups: true,
   },
 
   {
@@ -160,6 +182,8 @@ const slides = [
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer eget aliquet nibh praesent. Sed tempus urna et pharetra pharetra massa massa. At risus viverra adipiscing at in tellus. Eget magna fermentum iaculis eu non. Pharetra et ultrices neque ornare aenean euismod elementum nisi. Amet nisl suscipit adipiscing bibendum est ultricies integer quis auctor. Elementum nibh tellus molestie nunc non blandit massa enim. Cras adipiscing enim eu turpis egestas pretium aenean pharetra. Lorem dolor sed viverra ipsum nunc. Egestas purus viverra accumsan in nisl.
     `,
     siteID: 'Hudson_River_from_Vanderbilt',
+    paintings: "vanderbilt_Carmiencke.jpg,vanderbilt_irl.jpg",
+    showpopups: true,
   },
 
   {
@@ -168,6 +192,8 @@ const slides = [
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer eget aliquet nibh praesent. Sed tempus urna et pharetra pharetra massa massa. At risus viverra adipiscing at in tellus. Eget magna fermentum iaculis eu non. Pharetra et ultrices neque ornare aenean euismod elementum nisi. Amet nisl suscipit adipiscing bibendum est ultricies integer quis auctor. Elementum nibh tellus molestie nunc non blandit massa enim. Cras adipiscing enim eu turpis egestas pretium aenean pharetra. Lorem dolor sed viverra ipsum nunc. Egestas purus viverra accumsan in nisl.
     `,
     siteID: 'Hudson_River_from_Croton',
+    paintings: "crotonPointPark1_Gifford.jpg,crotonPointPark2_Gifford.jpg",
+    showpopups: true,
   },
 
   {
@@ -176,6 +202,8 @@ const slides = [
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer eget aliquet nibh praesent. Sed tempus urna et pharetra pharetra massa massa. At risus viverra adipiscing at in tellus. Eget magna fermentum iaculis eu non. Pharetra et ultrices neque ornare aenean euismod elementum nisi. Amet nisl suscipit adipiscing bibendum est ultricies integer quis auctor. Elementum nibh tellus molestie nunc non blandit massa enim. Cras adipiscing enim eu turpis egestas pretium aenean pharetra. Lorem dolor sed viverra ipsum nunc. Egestas purus viverra accumsan in nisl.
     `,
     siteID: 'Jasper_Cropsey',
+    paintings: "hudsonFromCropseyHome_Cropsey.jpg,hudsonFromCropseyHome2_Cropsey.jpg",
+    showpopups: true,
   },
 
   {
@@ -184,6 +212,8 @@ const slides = [
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer eget aliquet nibh praesent. Sed tempus urna et pharetra pharetra massa massa. At risus viverra adipiscing at in tellus. Eget magna fermentum iaculis eu non. Pharetra et ultrices neque ornare aenean euismod elementum nisi. Amet nisl suscipit adipiscing bibendum est ultricies integer quis auctor. Elementum nibh tellus molestie nunc non blandit massa enim. Cras adipiscing enim eu turpis egestas pretium aenean pharetra. Lorem dolor sed viverra ipsum nunc. Egestas purus viverra accumsan in nisl.
     `,
     siteID: 'Platte_Clove',
+    paintings: "platte_clove.jpg,a-sycamore-tree-plaaterkill-cove-asher-brown-durand.jpg",
+    showpopups: true,
   },
 
   {
@@ -192,6 +222,8 @@ const slides = [
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer eget aliquet nibh praesent. Sed tempus urna et pharetra pharetra massa massa. At risus viverra adipiscing at in tellus. Eget magna fermentum iaculis eu non. Pharetra et ultrices neque ornare aenean euismod elementum nisi. Amet nisl suscipit adipiscing bibendum est ultricies integer quis auctor. Elementum nibh tellus molestie nunc non blandit massa enim. Cras adipiscing enim eu turpis egestas pretium aenean pharetra. Lorem dolor sed viverra ipsum nunc. Egestas purus viverra accumsan in nisl.
     `,
     siteID: 'Storm_King',
+    paintings: "cole_storm_king.jpg,cole_storm_king2.jpg,storm_king_irl.jpg",
+    showpopups: true,
   },
 
   {
@@ -200,6 +232,8 @@ const slides = [
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer eget aliquet nibh praesent. Sed tempus urna et pharetra pharetra massa massa. At risus viverra adipiscing at in tellus. Eget magna fermentum iaculis eu non. Pharetra et ultrices neque ornare aenean euismod elementum nisi. Amet nisl suscipit adipiscing bibendum est ultricies integer quis auctor. Elementum nibh tellus molestie nunc non blandit massa enim. Cras adipiscing enim eu turpis egestas pretium aenean pharetra. Lorem dolor sed viverra ipsum nunc. Egestas purus viverra accumsan in nisl.
     `,
     siteID: 'Hudson_River_Skywalk',
+    paintings: "hudsonRiverSkywalk1.jpg,cloudsFromOlana_Church.jpg",
+    showpopups: true,
   },
   
 ];

@@ -178,7 +178,7 @@
         "siteID": "Kaaterskill_Falls",
         "region": "north",
         "painters": "Thomas Cole, Frederic Edwin Church, Sanford Robinson Gifford",
-        "paintings": "kaaterskillFalls_Cole.jpg,kaaterskill-falls-1826_Cole,kaaterskill-falls3.jpg,kaaterskill-falls4.jpg,kaaterskill-falls_irl.jpg"
+        "paintings": "kaaterskillFalls_Cole.jpg,kaaterskill-falls-1826_Cole.jpg,kaaterskill-falls3.jpg,kaaterskill-falls4.jpg,kaaterskill-falls_irl.jpg"
       },
       "geometry": {
         "type": "Point",
