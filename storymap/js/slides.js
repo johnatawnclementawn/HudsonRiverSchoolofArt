@@ -18,10 +18,6 @@ const slides = [
   {
     title: 'Thomas Cole National Historic Site',
     content: `
-    <img src="data/paintings/cole_mainHouse.jpg" alt="Thomas Cole National Historic Site main house">
-    <br/><br/>
-    **Introduction by Kevin J. Avery, Senior Research Scholar, The Metropolitan Museum of Art**
-    <br/><br/>
     *Hudson River School founder Thomas Cole fell in love with Catskill in 1825, 
     when he first visited the village and the unforgettable mountains that form 
     its backdrop.  He returned there several times from New York City, and several 
@@ -47,8 +43,6 @@ const slides = [
   {
     title: 'Olana State Historic Site',
     content: `
-    <img src="data/paintings/Catskill-Mountains_FromOlana1_Church.jpg" alt="Catskill Mountains From Olana, Frederic Church">
-    <br/><br/>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Integer eget aliquet nibh praesent. Sed tempus urna et pharetra pharetra massa massa. At risus viverra adipiscing at in tellus. Eget magna fermentum iaculis eu non. Pharetra et ultrices neque ornare aenean euismod elementum nisi. Amet nisl suscipit adipiscing bibendum est ultricies integer quis auctor. Elementum nibh tellus molestie nunc non blandit massa enim. Cras adipiscing enim eu turpis egestas pretium aenean pharetra. Lorem dolor sed viverra ipsum nunc. Egestas purus viverra accumsan in nisl.
     `,
     siteID: 'Olana_State_Historic_Site',

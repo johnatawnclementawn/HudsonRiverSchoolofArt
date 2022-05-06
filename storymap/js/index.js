@@ -56,6 +56,10 @@ function syncMapToCurrentSlide() {
   syncMapToSlide(slide);
 }
 
+// initialze empty array to hold picture slideshow index & pictureFrame elements
+let pictureIndex = [];
+let pictureFrame_List = [];
+
 function initSlides() {
   const converter = new showdown.Converter({ smartIndentationFix: true });
 
@@ -65,28 +69,32 @@ function initSlides() {
       <div class="slide" id="slide-${index}">
         <h2>${slide.title}</h2>
         <div class="slideshow-container" id="slide-${index}">
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          <a class="prev" onclick="plusPictures(-1, ${index})">&#10094;</a>
+          <a class="next" onclick="plusPictures(1, ${index})">&#10095;</a>
         </div>
       </div>
     `);
     slidesDiv.appendChild(slideDivHeader);
   
+    
     let paintings = slide.paintings;
     if (paintings) {
       paintings = paintings.split(",");
       for (imgIdx in paintings) {
         const imgLoc = paintings[imgIdx];
         const imgDiv = htmlToElement(`
-          <div class="mySlides fade">
+          <div class="myPaintings myPictures${index} fade"> 
             <div class="numbertext">${imgIdx} / ${paintings.length}</div>
-            <img src="data/paintings/${imgLoc}" style="width:100%">
+            <img src="data/paintings/${imgLoc}">
           </div>
+          <br/><br/>
         `);
         let targetSlideSlideshow = document.getElementById('slide-' + index).getElementsByClassName("slideshow-container")[0];
         targetSlideSlideshow.appendChild(imgDiv);
       };      
     }
+    pictureIndex.push(index);
+    pictureFrame_List.push('myPictures'+index);
 
     const slideDivContent = htmlToElement(` ${converter.makeHtml(slide.content)} `);
     let targetSlide = document.getElementById('slide-' + index);
@@ -124,39 +132,47 @@ function calcCurrentSlideIndex() {
   }
 }
 
+
+/////////////////////////////////////////////////////////////////////////////
+
+/* JS from image slide show example:  https://www.w3schools.com/howto/howto_js_slideshow.asp*/
+
+// Next/previous controls
+function plusPictures(n, frame) {
+  showPictures(pictureIndex[frame] += n, frame);
+  // console.log("Change picture in frame by " + frame)
+}
+
+// // Thumbnail image controls
+// function currentPicture(n, frame) {
+//   showPictures(pictureIDs_list[frame] += n, frame);
+// }
+
+function showPictures(n, no) {
+  let i;
+  let x = document.getElementsByClassName(pictureFrame_List[no]);
+  console.log(x);
+  if (no === 0) {no = 1};
+  if (n > x.length) {pictureIndex[no] = 1};    
+  if (n < 1) {pictureIndex[no] = x.length};
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[pictureIndex[no]].style.display = "block";  
+}
+
+//////////////////////////////////////////////////////////////////////////
+
+
+
+
 document.addEventListener('scroll', calcCurrentSlideIndex);
 
 initSlides();
 syncMapToCurrentSlide();
 loadSitesData();
 
+for (i in pictureIndex){
+  showPictures(1, i);
+};
 
-/* JS from image slide show example:  https://www.w3schools.com/howto/howto_js_slideshow.asp*/
-let slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  // let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  // for (i = 0; i < dots.length; i++) {
-  //   dots[i].className = dots[i].className.replace(" active", "");
-  // }
-  slides[slideIndex-1].style.display = "block";
-  // dots[slideIndex-1].className += " active";
-} 
