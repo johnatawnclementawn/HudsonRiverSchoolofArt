@@ -93,7 +93,7 @@ function initSlides() {
         targetSlideSlideshow.appendChild(imgDiv);
       };      
     }
-    pictureIndex.push(index);
+    pictureIndex.push(1);
     pictureFrame_List.push('myPictures'+index);
 
     const slideDivContent = htmlToElement(` ${converter.makeHtml(slide.content)} `);
@@ -151,14 +151,19 @@ function plusPictures(n, frame) {
 function showPictures(n, no) {
   let i;
   let x = document.getElementsByClassName(pictureFrame_List[no]);
-  console.log(x);
-  if (no === 0) {no = 1};
+  // console.log("n= " + n);
+  // console.log("no= " + no);
+  // console.log("x0= ");
+  // console.log(x[0]);
+  // console.log("x1= ");
+  // console.log(x[1]);
+  if (no === -1) {no = 0};
   if (n > x.length) {pictureIndex[no] = 1};    
   if (n < 1) {pictureIndex[no] = x.length};
   for (i = 0; i < x.length; i++) {
      x[i].style.display = "none";  
   }
-  x[pictureIndex[no]].style.display = "block";  
+  x[pictureIndex[no]-1].style.display = "block";  
 }
 
 //////////////////////////////////////////////////////////////////////////
