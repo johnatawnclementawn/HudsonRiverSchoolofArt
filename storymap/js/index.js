@@ -93,7 +93,7 @@ function initSlides() {
         targetSlideSlideshow.appendChild(imgDiv);
       };      
     }
-    pictureIndex.push(1);
+    pictureIndex.push(0);
     pictureFrame_List.push('myPictures'+index);
 
     const slideDivContent = htmlToElement(` ${converter.makeHtml(slide.content)} `);
@@ -177,7 +177,7 @@ initSlides();
 syncMapToCurrentSlide();
 loadSitesData();
 
-for (i in pictureIndex){
-  showPictures(1, i);
+for (let i = 1; i < pictureIndex.length; i++){
+  showPictures(0, i);
 };
 
